@@ -38,7 +38,7 @@ header {
 }
 
 
-/* esto acomoda todos los aechivos  */
+/* esto acomoda todos las rutas hacia los otros archivos de la pagina   */
 .nav-container {
     display: flex; 
     justify-content: space-between;
