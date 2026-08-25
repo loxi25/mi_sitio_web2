@@ -3,51 +3,48 @@
    ========================================================================== */
 
 :root {
-    --primary-color: #17365D;       /* Azul marino elegante [116] */
-    --secondary-color: #2563eb;     /* Azul brillante para acentos y enlaces [57] */
-    --accent-color: #e2e8f0;        /* Gris claro para bordes y fondos secundarios [47] */
-    --text-color: #222222;          /* Color de texto principal de alta legibilidad [116] */
-    --bg-color: #f4f7fb;            /* Fondo suave para todo el sitio [116] */
-    --card-bg: #ffffff;             /* Fondo de tarjetas de contenido [58] */
-    --border-radius: 12px;          /* Bordes redondeados modernos [105, 116] */
-    --transition-speed: 0.3s;       /* Velocidad estándar de transiciones [24, 55] */
-    --max-width: 1100px;            /* Ancho máximo recomendado del contenedor [107] */
+    --primary-color: #17365D;
+    --secondary-color: #2563eb;
+    --accent-color: #e2e8f0;
+    --text-color: #222222;
+    --bg-color: #f4f7fb;
+    --card-bg: #ffffff;
+    --border-radius: 10px;
+    --transition-speed: 0.3s;
+    --max-width: 1100px;
 }
 
 
-/* Reset universal y Modelo de Caja (¡Fundamental para evitar desbordamientos!) [13, 46, 47] */
+/* esto controla la manera en la que la pagina web muestra el contenido sin que quede nada por fuera o se desborde  */
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
 body {
-    background-color: var(--bg-color); /* [11, 105] */
-    margin: 0; /* Quita márgenes predeterminados [11] */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Sans-serif recomendada para lectura en pantalla [11, 81] */
-    color: var(--text-color);
-    line-height: 1.6; /* Interlineado idóneo para legibilidad [102] */
+    background-color: var(--bg-color);
+    margin: 0; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*tipo de letra*/
+    line-height: 1.6; 
 }
 
-/* ==========================================================================
-   NAVEGACIÓN Y ENCABEZADO (Header & Navigation) [31, 109, 112]
-   ========================================================================== */
 
 header {
     background-color: var(--primary-color);
     color: white;
     padding: 1rem 2rem;
-    position: sticky; /* Menú siempre visible al hacer scroll [21, 22, 50, 88] */
-    top: 0;
-    z-index: 1000; /* Asegura que quede por encima del contenido [109] */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(116, 38, 38, 0.1);
 }
 
+
+/* esto acomoda todos los aechivos  */
 .nav-container {
-    display: flex; /* Flexbox unidimensional para alinear el logo y el menú [27, 31, 109] */
+    display: flex; 
     justify-content: space-between;
     align-items: center;
     max-width: var(--max-width);
-    margin: 0 auto; /* Centra el menú horizontalmente en pantallas grandes [32, 107] */
+    margin: 0 auto; 
 }
 
 .logo {
@@ -60,15 +57,15 @@ header {
 /* Menú de navegación flexible [31, 112] */
 .nav-menu {
     display: flex;
-    gap: 1.5rem; /* Separación limpia entre enlaces [51, 109] */
-    list-style: none; /* Eliminar viñetas [23, 33, 83] */
+    gap: 1.5rem; 
+    list-style: none; 
     margin: 0;
     padding: 0;
 }
 
 .nav-menu a {
     color: #e2e8f0;
-    text-decoration: none; /* Quitar subrayado de enlaces [16, 83] */
+    text-decoration: none; 
     font-weight: 500;
     font-size: 1rem;
     padding: 0.5rem 0.8rem;
@@ -135,56 +132,38 @@ header {
     transition: background-color var(--transition-speed) ease, transform 0.2s ease, box-shadow var(--transition-speed) ease; /* [55] */
 }
 
-.btn:hover {
-    background-color: #1d4ed8;
-    transform: translateY(-3px); /* Pequeña elevación al hacer hover [55] */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
 
-.btn:active {
-    transform: translateY(-1px); /* Retroalimentación al hacer clic [23, 82] */
-}
 
 /* ==========================================================================
    DISEÑO DE CONTENEDOR PRINCIPAL Y PÁGINAS INTERNAS [32, 107]
    ========================================================================== */
-
+/* Centra todo el texto */
 main.container {
     max-width: var(--max-width);
-    margin: 2rem auto; /* Centrado horizontal automático [18, 32, 47, 107] */
+    margin: 2rem auto; 
     padding: 0 1.5rem;
 }
 
+
+/* estas lineas hacen que los titulos tengan un estilo especial  */
 .section-title {
     color: var(--primary-color);
     font-size: 2.2rem;
-    text-align: center; /* Centrar títulos principales [11] */
+    text-align: center; 
     margin-bottom: 2rem;
     position: relative;
     padding-bottom: 0.5rem;
 }
 
-/* Subrayado decorativo para títulos de sección */
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background-color: var(--secondary-color);
-    border-radius: 2px;
-}
 
-/* Tarjetas y Contenido estructurado [47, 58, 105] */
+/*tarjetas principales */
 .card {
     background-color: var(--card-bg);
-    border: 1px solid var(--accent-color); /* Borde sutil [47, 105] */
-    border-radius: var(--border-radius); /* Esquinas redondeadas [18, 47, 105] */
-    padding: 2rem; /* Espacio interno de respiración [17, 47, 106] */
-    margin-bottom: 2rem; /* Separación exterior [18, 106] */
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Sombra elegante */
+    border: 1px solid var(--accent-color); 
+    border-radius: var(--border-radius); 
+    padding: 2rem; 
+    margin-bottom: 2rem; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
     transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
 }
 
@@ -193,39 +172,34 @@ main.container {
     box-shadow: 0 8px 15px rgba(0,0,0,0.1);
 }
 
-/* Párrafos e Imágenes Responsivas [19, 32, 111] */
+/* esta linea solamente hace que se creen espacios entre las palabras */
 p {
-    text-align: justify; /* Justificado recomendado en las guías [32, 44] */
+    text-align: justify;
     margin-bottom: 1.5rem;
 }
 
+
+/* estas lineas de codigo hacen que la imagen se adapte al encabezado en el que se encuentra */
 img {
-    max-width: 100%; /* La imagen nunca desborda su contenedor [18, 19, 33, 111] */
-    height: auto; /* Mantiene la proporción original [19, 111] */
-    display: block; /* Evita espacios en blanco residuales debajo de la imagen [111] */
-    border-radius: 8px; /* Redondear esquinas de imágenes [18] */
-    margin: 1.5rem auto; /* Centrar imagen dentro de bloques */
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    border-radius: 8px; 
+    margin: 1.5rem auto; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* ==========================================================================
-   MAQUETACIÓN DE GALERÍAS Y LISTAS (Hobbies, Amigos, Música) [33, 110]
-   ========================================================================== */
 
-/* Cuadrícula responsiva que se adapta automáticamente al espacio disponible sin Media Queries adicionales [110, 111] */
+/* acomoda como se ubican las imagenes*/
 .grid-gallery {
-    display: grid; /* Layout bidimensional potente [29, 30, 52, 91] */
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Columnas fluidas y automáticas [110] */
-    gap: 1.5rem; /* Espacio entre tarjetas [29, 51, 92, 109] */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.rem; 
     padding: 0;
-    list-style: none; /* Ideal para galerías construidas con <ul> [33] */
+    list-style: none;
 }
 
-/* ==========================================================================
-   DISEÑO DE TABLAS (Especialmente para horario.html) [34, 35, 84]
-   ========================================================================== */
-
-/* Envoltorio responsivo para evitar rotura de layout en móviles [35] */
+/* disño de la tabla */
 .table-responsive {
     display: block;
     width: 100%;
@@ -264,64 +238,8 @@ tr:hover {
     transition: background-color 0.2s ease;
 }
 
-/* ==========================================================================
-   ESTILOS DE FORMULARIO (Si se añaden en el futuro) [112]
-   ========================================================================== */
 
-.form-group {
-    margin-bottom: 1.5rem;
-}
 
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-    color: var(--primary-color);
-}
-
-input[type="text"],
-input[type="email"],
-textarea,
-select {
-    width: 100%;
-    padding: 0.8rem; /* Relleno cómodo [112] */
-    border: 1px solid #ccc;
-    border-radius: 6px; /* [112] */
-    font-family: inherit;
-    font-size: 1rem;
-    transition: border-color var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
-}
-
-/* Efecto focus en inputs [54] */
-input:focus,
-textarea:focus,
-select:focus {
-    outline: none;
-    border-color: var(--secondary-color);
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25); /* Resalta el input activo [115] */
-}
-
-/* ==========================================================================
-   DISEÑO DEL PIE DE PÁGINA (Footer) [116]
-   ========================================================================== */
-
-footer {
-    background-color: #1e293b; /* Fondo oscuro y profesional [43] */
-    color: #94a3b8; /* Texto gris suave */
-    text-align: center; /* [116] */
-    padding: 2rem 1rem;
-    margin-top: 3rem;
-}
-
-footer p {
-    text-align: center; /* Centra el texto del pie de página */
-    margin: 0;
-    font-size: 0.9rem;
-}
-
-/* ==========================================================================
-   DISEÑO RESPONSIVO Y MEDIA QUERIES (Mobile-First) [25, 56, 114]
-   ========================================================================== */
 
 /* Para pantallas medianas como Tablets (min-width: 768px) [26, 36, 57, 114] */
 @media screen and (min-width: 768px) {
