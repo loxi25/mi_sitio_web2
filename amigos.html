@@ -1,48 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mis Mejores Amigos - Mi Sitio Web Personal</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Enlaces a Google Fonts para Tipografía Elegante de Alta Legibilidad -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-
-<link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-
-
-<body>
-  <body style="background-color:rgb(226, 85, 85);"
-    <!DOCTYPE html>
-<html>
 <body>
 
-<a href="index.html">Volver a la página principal</a>
+    <!-- Encabezado con menú de navegación flexible -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Mi Espacio Personal</a>
+            <nav>
+                <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nacimiento.html">Nacimiento</a></li>
+                <li><a href="familia.html">Familia</a></li>
+                <li><a href="educacion.html">Educación</a></li>
+                <li><a href="amigos.html" class="active">Amigos</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="musica.html">Música</a></li>
+                <li><a href="horario.html">Horario</a></li>
+                <li><a href="proyecto_vida.html">Proyecto de Vida</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<h2>mis amigos mas cercanos </h2>
-<hr> 
-<ul>
-  <li>castillo</li>
-  <li>piza </li>
-  <li>peligro</li>
-  <li>jose</li>
-  <li>lesly</li>
-  <li>jorge</li>
 
-</ul>  
-<hr> 
-<h2>mis compagays </h2>
-<hr> 
-<ol>
-  <li>juan diego</li>
-  <li>rojas</li>
-  <li>goofy</li>
-  <li>jorge</li>
-  <li>miguel</li>
-  <li>villar</li>
-</ol> 
-<hr> 
-<img src="img/valentina" alt="mis amiguitos" width="300" height="300">
-<img src="img/peligro" alt="amigos" width="300" height="300">
-<img src="img/lely" alt="amigos" width="300" height="300">
+    <main class="container">
+        <h1 class="section-title">Mis Grandes Amigos</h1>
+        <p style="text-align: center;">Los amigos son la familia que elegimos. Personas increíbles con las que comparto risas, retos, estudios y aventuras cotidianas [33].</p>
+        
+        <!-- Galería responsiva usando CSS Grid para alinear tarjetas perfectamente [33, 110] -->
+        <ul class="grid-gallery">
+            <li class="card">
+                <img src="img/amigo1.jpg" alt="Foto de mi Amigo 1">
+                <h3>Amigo de la Infancia</h3>
+                <p>Hemos compartido anécdotas inolvidables desde el preescolar. Siempre dispuesto a escuchar y acompañarme en cualquier aventura deportiva o académica [33].</p>
+            </li>
+            
+            <li class="card">
+                <img src="img/amigo2.jpg" alt="Foto de mi Amigo 2">
+                <h3>Compañero de Estudios</h3>
+                <p>Un gran apoyo para repasar temas difíciles de matemáticas y proyectos de programación. Su optimismo y dedicación son realmente inspiradores [33].</p>
+            </li>
+            
+            <li class="card">
+                <img src="img/amigo3.jpg" alt="Foto de mi Amigo 3">
+                <h3>Amigo de Aventuras</h3>
+                <p>Compartimos el amor por el aire libre, la música y los videojuegos. Las tardes de fin de semana están llenas de pláticas profundas y mucha diversión [33].</p>
+            </li>
+        </ul>
+    </main>
+
+
+    <!-- Pie de página elegante y unificado -->
+    <footer>
+        <p>&copy; 2026 - Sitio Web Personal Creado con HTML y CSS. Basado en W3Schools.</p>
+    </footer>
+
 </body>
 </html>

@@ -1,67 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-
-<link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <body style="background-color:rgb(87, 53, 78);">
-    <style>
-
-    
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: center;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-
-
-
-
-    </style>
+    <title>Mi Familia - Mi Sitio Web Personal</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Enlaces a Google Fonts para Tipografía Elegante de Alta Legibilidad -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-<a href="index.html">Volver a la página principal</a>
-    <h1>Familia</h1>
-    <p>por mi familia solamente tengo a mi papa  , mama mi padrino y unos tios y ya elresto de familia no es muy cercana</p>
+
+    <!-- Encabezado con menú de navegación flexible -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Mi Espacio Personal</a>
+            <nav>
+                <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nacimiento.html">Nacimiento</a></li>
+                <li><a href="familia.html" class="active">Familia</a></li>
+                <li><a href="educacion.html">Educación</a></li>
+                <li><a href="amigos.html">Amigos</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="musica.html">Música</a></li>
+                <li><a href="horario.html">Horario</a></li>
+                <li><a href="proyecto_vida.html">Proyecto de Vida</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
 
-<table>
-    <tr>
-        <th>Familia</th>
-        <th>Descripción</th>
-    </tr>
-    <tr>
-        <td>Papa</td>
-        <td>mi papa es un hombre trabajador y muy responsable con su familia y con su trabajo</td>
-    </tr>
-    <tr>
-        <td>Mama</td>
-        <td>mi mama es una mujer muy responsable con su familia </td>
-    </tr>
-    <tr>
-        <td>Padrino</td>
-        <td>mi padrino es un hombre muy trabajador y responsable con su familia y con su trabajo</td>
-    </tr>
+    <main class="container">
+        <h1 class="section-title">Mi Familia</h1>
+        <div class="card">
+            <h3>Mi Principal Motor y Apoyo</h3>
+            <!-- Imagen responsiva (max-width: 100% y height: auto) [19, 33, 111] -->
+            <img src="img/familia.jpg" alt="Mi Familia">
+            <p>La familia es el pilar fundamental que sostiene cada uno de mis pasos y aspiraciones [32]. En este espacio, comparto con orgullo el reconocimiento a las personas que me han visto crecer, me han brindado su amor incondicional, consejos sabios y apoyo en cada momento crucial de mi vida escolar y personal [32].</p>
+            <p>Cada miembro de mi familia aporta una enseñanza de valor inestimable: el esfuerzo diario, la honestidad, la perseverancia y la alegría de compartir momentos juntos [32]. Son, sin lugar a dudas, mi mayor fuente de inspiración y el refugio donde siempre puedo volver.</p>
+        </div>
+    </main>
 
 
+    <!-- Pie de página elegante y unificado -->
+    <footer>
+        <p>&copy; 2026 - Sitio Web Personal Creado con HTML y CSS. Basado en W3Schools.</p>
+    </footer>
 
-
-
-<img src="img/mama" alt="familia" width="300" height="300">
-<img src="img/papa" alt="familia" width="300" height="300">
 </body>
 </html>

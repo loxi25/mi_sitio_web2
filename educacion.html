@@ -1,59 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-
-<link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <body style="background-color:rgb(22, 89, 92);">
-    <style>
-
-    
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: center;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-
-
-
-
-    </style>
+    <title>Mi Educación - Mi Sitio Web Personal</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Enlaces a Google Fonts para Tipografía Elegante de Alta Legibilidad -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-<a href="index.html">Volver a la página principal</a>
-    <h1>Educación</h1>
+
+    <!-- Encabezado con menú de navegación flexible -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Mi Espacio Personal</a>
+            <nav>
+                <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nacimiento.html">Nacimiento</a></li>
+                <li><a href="familia.html">Familia</a></li>
+                <li><a href="educacion.html" class="active">Educación</a></li>
+                <li><a href="amigos.html">Amigos</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="musica.html">Música</a></li>
+                <li><a href="horario.html">Horario</a></li>
+                <li><a href="proyecto_vida.html">Proyecto de Vida</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
 
+    <main class="container">
+        <h1 class="section-title">Mi Educación Académica</h1>
+        <!-- Cuadrícula responsiva que se adapta automáticamente al espacio disponible usando CSS Grid [110, 111] -->
+        <div class="grid-gallery">
+            <div class="card">
+                <h3>Educación Primaria</h3>
+                <p>Mis primeros años de formación escolar donde aprendí las bases del conocimiento y descubrí mi curiosidad por la ciencia y las artes. Un periodo lleno de juegos, aprendizajes básicos y el desarrollo de mis primeras habilidades sociales [32].</p>
+            </div>
+            
+            <div class="card">
+                <h3>Educación Secundaria</h3>
+                <p>Una etapa de transición clave donde profundicé en materias de ciencias exactas, ciencias sociales y tecnologías. Aquí comencé a tomar un rol más activo en proyectos colaborativos y a definir mis áreas académicas preferidas [32].</p>
+            </div>
+            
+            <div class="card">
+                <h3>Educación Actual</h3>
+                <p>Actualmente me encuentro cursando mis estudios con un alto compromiso académico, enfocándome en el desarrollo de competencias tecnológicas, diseño web y programación para afrontar con éxito los retos profesionales del futuro [32].</p>
+            </div>
+        </div>
+    </main>
 
-<img src="img/actividades.jpeg" alt="actividades" width="500" height="300">
 
+    <!-- Pie de página elegante y unificado -->
+    <footer>
+        <p>&copy; 2026 - Sitio Web Personal Creado con HTML y CSS. Basado en W3Schools.</p>
+    </footer>
 
-<img src="img/e.jpeg" alt="actividades" width="500" height="300">
-
-<table>
-    <tr>
-        <th>Educación</th>
-        <th>Descripción</th>
-    </tr>
-    <tr>
-        <td>colegio san jose de guanenta</td>
-        <td>llegue al colegio san jose de guanenta en el año 2022 y cursé mis estudios allí hasta el presente momento cada año iba mejorando mis notas y  mis actitude hasta ahora tambien he aprendido mucho en este tiempo y eh participado en muchas actividades </td>
-    </tr>
-</table>
 </body>
 </html>
-

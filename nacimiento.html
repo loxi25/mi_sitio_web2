@@ -1,33 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-
-    <link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <body style="background-color:rgb(87, 92, 22);"></body>
+    <title>Fecha y Lugar de Nacimiento - Mi Sitio Web Personal</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Enlaces a Google Fonts para Tipografía Elegante de Alta Legibilidad -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <a href="index.html">Volver a la página principal</a>
-    <h1>Nacimiento</h1>
-<p>naci especificamente en el año 2008 en la ciudad de barranquilla un 8 de septiembre</p>
 
-<img src="img/barranquilla.jpeg" alt="lugar de nacimiento" width="300" height="300">
+    <!-- Encabezado con menú de navegación flexible -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Mi Espacio Personal</a>
+            <nav>
+                <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nacimiento.html" class="active">Nacimiento</a></li>
+                <li><a href="familia.html">Familia</a></li>
+                <li><a href="educacion.html">Educación</a></li>
+                <li><a href="amigos.html">Amigos</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="musica.html">Música</a></li>
+                <li><a href="horario.html">Horario</a></li>
+                <li><a href="proyecto_vida.html">Proyecto de Vida</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
 
+    <main class="container">
+        <h1 class="section-title">Fecha y Lugar de Nacimiento</h1>
+        <div class="card">
+            <h3>Mi Historia de Origen</h3>
+            <!-- Imagen responsiva (max-width: 100% y height: auto) [19, 33, 111] -->
+            <img src="img/nacimiento.jpg" alt="Lugar de Nacimiento o Infancia">
+            <p>Nací en un día muy especial, comenzando mi viaje en este mundo. El lugar de mi nacimiento no solo representa un punto geográfico en el mapa, sino también la cuna de mis primeros recuerdos, juegos y las raíces que definen mi identidad actual [32].</p>
+            <p>Crecer en este entorno me permitió valorar las tradiciones locales, la hospitalidad de su gente y la riqueza cultural que ahora llevo con orgullo. En esta página rindo homenaje a ese hermoso punto de partida que me vio dar mis primeros pasos [32].</p>
+        </div>
+    </main>
 
 
-<table>
-    <tr>
-        <th>Fecha de nacimiento</th>
-        <th>Lugar de nacimiento</th>
-    </tr>
-    <tr>
-        <td>8 de septiembre del 2008</td>
-        <td>barranquilla</td>
-    </tr>
+    <!-- Pie de página elegante y unificado -->
+    <footer>
+        <p>&copy; 2026 - Sitio Web Personal Creado con HTML y CSS. Basado en W3Schools.</p>
+    </footer>
+
 </body>
 </html>

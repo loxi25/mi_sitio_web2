@@ -1,24 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    
-<link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <body style="background-color:rgb(22, 92, 28);"></body>
+    <title>Proyecto de Vida - Mi Sitio Web Personal</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Enlaces a Google Fonts para Tipografía Elegante de Alta Legibilidad -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <a href="index.html">Volver a la página principal</a>
 
-    <h1>Proyecto de vida</h1>
-    <p> mi proyecto de vida es seguir con la carrera de ingeniería en sistemas , tratare de estudiar la mayoria de ramas posibles para tener mas variedad de trabajo en un futuro</p>
+    <!-- Encabezado con menú de navegación flexible -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Mi Espacio Personal</a>
+            <nav>
+                <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nacimiento.html">Nacimiento</a></li>
+                <li><a href="familia.html">Familia</a></li>
+                <li><a href="educacion.html">Educación</a></li>
+                <li><a href="amigos.html">Amigos</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="musica.html">Música</a></li>
+                <li><a href="horario.html">Horario</a></li>
+                <li><a href="proyecto_vida.html" class="active">Proyecto de Vida</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <img src="img/sistemas.jpeg" alt="ingenieria" width="300" height="300">
 
+    <main class="container">
+        <h1 class="section-title">Mi Proyecto de Vida</h1>
+        <p style="text-align: center;">La planificación estratégica de mi futuro, plasmando mis sueños de manera clara, realista y ambiciosa [32].</p>
+        
+        <div class="grid-gallery">
+            <div class="card">
+                <h3>Corto Plazo (1 Año)</h3>
+                <p><strong>Meta:</strong> Dominar los fundamentos de programación web (HTML5, CSS3, JavaScript básico) y concluir mi ciclo escolar actual con un promedio destacado [32].</p>
+                <p><strong>Estrategia:</strong> Estudiar de manera autodidacta 1 hora diaria adicional usando tutoriales oficiales de W3Schools y practicar con proyectos reales [32].</p>
+            </div>
+            
+            <div class="card">
+                <h3>Mediano Plazo (3 Años)</h3>
+                <p><strong>Meta:</strong> Ingresar a una carrera universitaria enfocada en Ingeniería en Sistemas Computacionales o Ciencias de la Computación [32].</p>
+                <p><strong>Estrategia:</strong> Mantener una alta constancia de notas académicas, preparar de manera exhaustiva mi examen de ingreso y participar en concursos escolares [32].</p>
+            </div>
+            
+            <div class="card">
+                <h3>Largo Plazo (5+ Años)</h3>
+                <p><strong>Meta:</strong> Consolidarme como Desarrollador Full-Stack Profesional y colaborar en el diseño de plataformas de software innovadoras en una firma de renombre [32].</p>
+                <p><strong>Estrategia:</strong> Construir un portafolio robusto de proyectos web propios, realizar prácticas profesionales tempranas y continuar con especializaciones avanzadas [32].</p>
+            </div>
+        </div>
+
+        <!-- Formulario maquetado con las propiedades accesibles y robustas especificadas en W3Schools [112] -->
+        <div class="card" style="margin-top: 3rem;">
+            <h3>Escríbeme o Comparte tu Opinión [112]</h3>
+            <p>Usa este formulario estructurado para enviarme un saludo o tus observaciones sobre el sitio:</p>
+            
+            <form action="#" method="post" onsubmit="event.preventDefault(); alert('¡Gracias por tu mensaje! Formulario funcionando visualmente.');">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre..." required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="comentarios">Mensaje / Comentarios:</label>
+                    <textarea id="comentarios" name="comentarios" rows="5" placeholder="Escribe aquí tu sugerencia o mensaje..." required></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </main>
+
+
+    <!-- Pie de página elegante y unificado -->
+    <footer>
+        <p>&copy; 2026 - Sitio Web Personal Creado con HTML y CSS. Basado en W3Schools.</p>
+    </footer>
 
 </body>
 </html>

@@ -1,69 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-
-    
-<link rel="stylesheet" href="style.css">
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-
-    
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        th, td {
-            border: 1px solid rgb(55, 47, 126);
-            padding: 8px;
-            text-align: center;
-        }
-
-        th {
-            background-color: #f2f2f2;
-        }
-
-
-
-
-    </style>
+    <title>Hobbies - Mi Sitio Web Personal</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Enlaces a Google Fonts para Tipografía Elegante de Alta Legibilidad -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <a href="index.html">Volver a la página principal</a>
 
-<h1>Hobbies</h1>
-<p>como tal no se si es un hooby pero me gusta jugar videojuegos con mis amigos</p>
-<img src="img/juego.jpeg" alt="Imagen de ejemplo" width="300" height="200">
-<img src="img/papus.jpg" alt="Imagen de ejemplo" width="300" height="200">
-
-
-<table>
-    <tr>
-        <th>Hobby</th>
-        <th>Descripción</th>
-    </tr>
-    <tr>
-        <td>Videojuegos</td>
-        <td>Me gusta jugar videojuegos con mis amigos, especialmente con castillo</td>
-    </tr>
-    <tr>
-        <td>Deportes</td>
-        <td>Disfruto practicar deportes como el fútbol y el futbol con mis amiguitos en mi tiempo libre.</td>
-    </tr>
-    <tr>
-        <td>Lectura</td>
-        <td>Me gusta leer libros de vez en cuando y fantasía para relajarme  mayormente.</td>
-    </tr>
+    <!-- Encabezado con menú de navegación flexible -->
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Mi Espacio Personal</a>
+            <nav>
+                <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nacimiento.html">Nacimiento</a></li>
+                <li><a href="familia.html">Familia</a></li>
+                <li><a href="educacion.html">Educación</a></li>
+                <li><a href="amigos.html">Amigos</a></li>
+                <li><a href="hobbies.html" class="active">Hobbies</a></li>
+                <li><a href="musica.html">Música</a></li>
+                <li><a href="horario.html">Horario</a></li>
+                <li><a href="proyecto_vida.html">Proyecto de Vida</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
 
+    <main class="container">
+        <h1 class="section-title">Mis Hobbies y Pasatiempos</h1>
+        <p style="text-align: center;">Actividades que alimentan mi espíritu, fomentan mi creatividad y me permiten relajarme después de un largo día de estudio [33].</p>
+        
+        <!-- Lista ordenada como galería responsiva [33] -->
+        <ul class="grid-gallery">
+            <li class="card">
+                <img src="img/hobby_programacion.jpg" alt="Programación y Diseño Web">
+                <h3>Desarrollo Web</h3>
+                <p>Descubrir el poder de HTML5 y CSS3 para estructurar y diseñar interfaces en línea se ha convertido en una de mis pasiones más grandes y un reto que disfruto a diario [33].</p>
+            </li>
+            
+            <li class="card">
+                <img src="img/hobby_deportes.jpg" alt="Deportes y Actividad Física">
+                <h3>Deportes</h3>
+                <p>Mantener una vida activa mediante el ejercicio físico o el deporte en equipo no solo mejora mi salud, sino que también me enseña disciplina y el valor del trabajo en equipo [33].</p>
+            </li>
+            
+            <li class="card">
+                <img src="img/hobby_lectura.jpg" alt="Lectura de Libros">
+                <h3>Lectura</h3>
+                <p>Sumergirme en novelas de ciencia ficción, misterio o guías tecnológicas me permite expandir mis horizontes y adquirir nuevas perspectivas sobre la tecnología y el mundo [33].</p>
+            </li>
+        </ul>
+    </main>
+
+
+    <!-- Pie de página elegante y unificado -->
+    <footer>
+        <p>&copy; 2026 - Sitio Web Personal Creado con HTML y CSS. Basado en W3Schools.</p>
+    </footer>
 
 </body>
 </html>
-
-
 
