@@ -14,6 +14,7 @@
     --max-width: 1100px;            /* Ancho máximo recomendado del contenedor [107] */
 }
 
+
 /* Reset universal y Modelo de Caja (¡Fundamental para evitar desbordamientos!) [13, 46, 47] */
 *, *::before, *::after {
     box-sizing: border-box;
